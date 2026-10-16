@@ -1,0 +1,19 @@
+Wiltech ContaPY Local v1.2 - Obligaciones y liquidaciones preliminares
+
+Incluye configuración individual de IVA General, IRE General, IRE SIMPLE,
+IRP Servicios Personales e IRP Rentas y Ganancias de Capital.
+
+IVA: suma débito registrado y crédito POTENCIAL registrado, sin concluir impuesto
+liquidable. IRE e IRP: muestra totales referenciales y bloquea cálculo definitivo.
+Todas las liquidaciones se guardan con estado BORRADOR y advertencias.
+
+NO INCLUYE motor normativo completo ni validación oficial DNIT.
+NO utilizar los borradores como declaración jurada o impuesto exigible.
+
+La base sigue en %LOCALAPPDATA%\WiltechContaPY\contapy.db
+Respaldar antes de actualizar. Compilar en Windows con CREAR_EXE_WINDOWS.bat.
+El EXE aún no está compilado ni probado en Windows.
+
+Pendiente: parámetros fiscales oficiales versionados por ejercicio, bases imponibles,
+deducciones, escalas, retenciones, prorrateos, conciliaciones, formularios DNIT,
+importación XML SIFEN y RG 90 con validación de formatos.

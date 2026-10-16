@@ -1,0 +1,6 @@
+WILTECH CONTAPY 1.3 - BUSQUEDA RUC LOCAL
+
+En Contribuyentes, elegir "Importar padrón DNIT (CSV)". El archivo debe tener encabezados RUC y RAZON_SOCIAL (también se aceptan variantes comunes). El programa acepta CSV UTF-8 con separadores ; , tabulador o |. Si la DNIT publica XLSX, guardarlo como CSV UTF-8 antes de importar.
+Al introducir un RUC y pulsar Buscar RUC (o Enter), se completa la razón social desde el padrón importado. No se inventan nombres ni se usa un servicio web sin credenciales. La búsqueda también se intenta al salir del campo RUC. El padrón es una copia local que debe actualizarse periódicamente. El dígito verificador, si se proporciona, se separa del número pero NO se verifica matemáticamente; confirmar la exactitud con DNIT.
+La base contapy.db se conserva en LOCALAPPDATA/WiltechContaPY. Se agrega la tabla padron_ruc sin borrar tablas existentes. Antes de actualizar, respaldar la base.
+No está certificado para declaraciones ni genera RG90. El EXE debe compilarse en Windows; no se probó aquí su ejecución gráfica.
