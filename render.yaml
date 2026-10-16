@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: wiltech-contapy-web
+    runtime: python
+    plan: starter
+    buildCommand: pip install -r requirements.txt && flask --app app db upgrade
+    startCommand: gunicorn --workers 2 --bind 0.0.0.0:$PORT app:app
+    healthCheckPath: /health
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: wiltech-contapy-db
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
+      - key: COOKIE_SECURE
+        value: '1'
+databases:
+  - name: wiltech-contapy-db
+    plan: basic-256mb
+    databaseName: contapy
+    user: contapy
