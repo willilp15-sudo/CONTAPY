@@ -1,0 +1,11 @@
+CORRECCION ERROR: Path doesn't exist: migrations
+
+1. Descomprime este ZIP.
+2. Sube el CONTENIDO del ZIP directamente a la raiz de la rama main del repositorio CONTAPY.
+3. Comprueba en GitHub que render.yaml, app.py, requirements.txt y la carpeta migrations aparecen en la misma raiz.
+4. En Render > wiltech-contapy-web > Settings comprueba Root Directory vacio (si subiste a raiz).
+5. Haz Manual Deploy > Deploy latest commit.
+6. NO borres la base PostgreSQL existente ni ejecutes flask db init.
+7. Si vuelve a fallar, comparte los nuevos logs.
+
+Este paquete corrige la disposicion de carpetas del ZIP, no certifica la ejecucion ni la compatibilidad fiscal.
